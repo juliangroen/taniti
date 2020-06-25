@@ -1,0 +1,118 @@
+@import "variables";
+
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+
+    .menu-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 1rem;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+
+        &:checked {
+            + .menu-icon {
+                div {
+                    transform: rotate(45deg);
+
+                    &:before,
+                    &:after {
+                        top: 0;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+
+            ~ .menu-content {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .menu-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 0;
+        z-index: 1;
+
+        div {
+            position: relative;
+            background: $primary;
+            height: 2px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                background: $primary;
+                top: -8px;
+                height: 2px;
+                width: 100%;
+            }
+
+            &:after {
+                top: 8px;
+            }
+        }
+    }
+
+    .menu-content {
+        position: fixed;
+        background: $bg;
+        top: 3.4rem;
+        left: 0;
+        height: calc(100% - 3.5rem);
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease;
+
+        ul {
+            margin-top: -3.5rem;
+            padding: 0;
+            li {
+                font-family: sans-serif;
+                font-size: 2rem;
+                list-style: none;
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+
+        .copyright {
+            color: $shadow;
+            font-size: 0.8rem;
+        }
+    }
+}

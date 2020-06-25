@@ -1,0 +1,31 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: $bg;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background: $bg;
+    box-shadow: 0 -4px 16px $shadow;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+
+    div {
+        color: $primary;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+    }
+}
