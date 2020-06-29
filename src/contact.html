@@ -11,7 +11,7 @@
         />
         <link rel="stylesheet" href="app.css" />
         <link rel="stylesheet" href="menu.css" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="contact.css" />
     </head>
     <body>
         <!-- header -->
@@ -32,7 +32,7 @@
                     <li><a href="#">Longlink</a></li>
                     <li><a href="#">Reallylonglink</a></li>
                     <li><a href="#">Linkeylink</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
                     <li class="copyright">©2020 Taniti</li>
                 </ul>
             </div>
@@ -40,27 +40,30 @@
         <!-- / mobile menu -->
 
         <!-- content -->
-        <section class="container">
-            <div class="hero">
-                <img src="../img/hero_image.jpg" alt="Tanitian Island Photo" />
+        <div class="content">
+            <h1 class="title">Contact Us</h1>
+            <p class="description">
+                Quia officiis nostrum minima adipisci inventore ut corporis hic.
+                Repudiandae id id minima explicabo ex quia esse. Accusamus velit
+                impedit animi. Et quis qui est ab dolorem aut explicabo. Laborum
+                sint amet cum ut soluta.
+            </p>
+            <div class="card">
+                <form class="contact" action="">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" name="nameInput" id="nameInput" />
+                    <label for="emailInput">Email:</label>
+                    <input type="text" name="emailInput" id="emailInput" />
+                    <label for="phoneInput">Phone:</label>
+                    <input type="tel" name="phoneInput" id="phoneInput" />
+                    <label for="subjectInput">Subject:</label>
+                    <input type="text" name="subjectInput" id="subjectInput" />
+                    <label for="messageBox">Message:</label>
+                    <textarea name="messageBox" id="messageBox"></textarea>
+                    <button type="submit" id="sendButton">Send</button>
+                </form>
             </div>
-            <div class="content">
-                <h1>Welcome To Paradise</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Cras ullamcorper eleifend nulla, non dictum diam consequat
-                    et. Nam vestibulum rutrum massa eu feugiat. Nulla accumsan
-                    eros placerat metus ornare, eget vestibulum lacus tincidunt.
-                    Proin a sagittis nunc. Nam non tristique quam, at volutpat
-                    lorem. Class aptent taciti sociosqu ad litora torquent per
-                    conubia nostra, per inceptos himenaeos. Vestibulum a aliquet
-                    est. Aliquam vel dui non mauris sagittis dapibus. Aenean
-                    suscipit ipsum urna, vel pulvinar elit sodales semper. Nulla
-                    non ligula a purus iaculis mollis.
-                </p>
-                <a href="./contact.html">Book your trip today!</a>
-            </div>
-        </section>
+        </div>
         <!-- / content -->
     </body>
 </html>

@@ -42,3 +42,11 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
 }
+
+.main-header a {
+    text-decoration: none;
+}
+
+.main-header a:visited {
+    color: var(--primary);
+}
