@@ -1,0 +1,24 @@
+{
+    "name": "taniti",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "postcss src/*.css --use autoprefixer -d build/ && cp src/index.html build/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juliangroen/taniti.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/juliangroen/taniti/issues"
+    },
+    "homepage": "https://github.com/juliangroen/taniti#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.8.4",
+        "postcss-cli": "^7.1.1"
+    }
+}
