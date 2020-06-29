@@ -1,6 +1,8 @@
 :root {
     /* fonts */
     --logo-font: 'Krona One', sans-serif;
+    --sans-serif: 'Montserrat', sans-serif;
+    --serif: 'Playfair Display', serif;
     /* color scheme */
     --text-light: hsla(248, 16%, 96%, 1);
     --text-dark: hsla(248, 16%, 24%, 1);
@@ -21,6 +23,7 @@ html {
 
 body {
     background: var(--bg);
+    color: var(--text-dark);
     margin: 0;
     padding: 0;
 }
