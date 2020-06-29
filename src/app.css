@@ -40,6 +40,5 @@ body {
     color: var(--primary);
     font-family: var(--logo-font);
     font-size: 1.5rem;
-    line-height: 1.5rem;
     padding: 1rem;
 }
