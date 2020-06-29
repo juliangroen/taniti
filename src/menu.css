@@ -23,10 +23,6 @@
     transform: rotate(8deg);
 }
 
-.menu-wrapper .menu-toggle:hover + .menu-icon div:before,
-.menu-wrapper .menu-toggle:hover + .menu-icon div:after {
-}
-
 .menu-wrapper .menu-toggle:checked + .menu-icon div {
     transform: rotate(45deg);
 }
