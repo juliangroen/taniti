@@ -49,7 +49,7 @@
 }
 
 .menu-wrapper .menu-icon div {
-    position: relative;
+    position: absolute;
     background: var(--primary);
     height: 2px;
     width: 100%;
