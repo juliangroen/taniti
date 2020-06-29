@@ -1,5 +1,5 @@
 .menu-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -19,8 +19,20 @@
     z-index: 2;
 }
 
+.menu-wrapper .menu-toggle:hover + .menu-icon div {
+    transform: rotate(8deg);
+}
+
+.menu-wrapper .menu-toggle:hover + .menu-icon div:before,
+.menu-wrapper .menu-toggle:hover + .menu-icon div:after {
+}
+
 .menu-wrapper .menu-toggle:checked + .menu-icon div {
     transform: rotate(45deg);
+}
+
+.menu-wrapper .menu-toggle:checked:hover + .menu-icon div {
+    transform: rotate(37deg);
 }
 
 .menu-wrapper .menu-toggle:checked + .menu-icon div:before,
@@ -61,7 +73,7 @@
 
 .menu-wrapper .menu-icon div:before,
 .menu-wrapper .menu-icon div:after {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--primary);
     top: -8px;
@@ -85,7 +97,7 @@
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .menu-wrapper .menu-content ul {
@@ -106,6 +118,10 @@
     color: var(--primary);
     letter-spacing: 0.2rem;
     text-decoration: none;
+}
+
+.menu-wrapper .menu-content ul li:hover {
+    transform: scale(108%);
 }
 
 .menu-wrapper .menu-content .copyright {
