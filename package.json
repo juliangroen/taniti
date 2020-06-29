@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "postcss src/*.css --use autoprefixer -d build/src && cp src/*.html build/src && cp *.html build && mkdir build/img && cp img/*.* build/img",
+        "build": "postcss src/*.css --use autoprefixer -d build/src && cp src/*.html build/src && cp *.html build && mkdir -p build/img && cp img/*.* build/img",
         "publish": "git subtree push --prefix build origin gh-pages"
     },
     "repository": {
