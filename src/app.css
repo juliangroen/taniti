@@ -1,0 +1,78 @@
+:root {
+    /* fonts */
+    --logo-font: "Krona One", sans-serif;
+    --sans-serif: "Montserrat", sans-serif;
+    --serif: "Playfair Display", serif;
+    /* color scheme */
+    --text-light: hsla(248, 16%, 96%, 1);
+    --text-dark: hsla(248, 16%, 24%, 1);
+    --bg: hsla(248, 16%, 96%, 1);
+    --bg-light: hsla(248, 0%, 100%, 1);
+    --bg-dark: hsla(248, 16%, 94%, 1);
+    --shadow: hsla(248, 8%, 48%, 1);
+    --border: hsla(248, 8%, 80%, 1);
+    --primary: hsla(184, 96%, 32%, 1);
+    --accent-light: hsla(320, 32%, 64%, 1);
+    --accent-dark: hsla(248, 24%, 48%, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--serif);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--sans-serif);
+}
+
+.card {
+    background: var(--bg);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--shadow);
+}
+
+.main-header {
+    background: var(--bg);
+    box-shadow: 0 -4px 16px 0 var(--shadow);
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+}
+
+.main-header div {
+    color: var(--primary);
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.main-header a {
+    text-decoration: none;
+}
+
+.main-header a:visited {
+    color: var(--primary);
+}

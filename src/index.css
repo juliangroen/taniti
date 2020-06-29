@@ -1,0 +1,40 @@
+.container {
+    padding-top: 3.5rem;
+}
+
+.content {
+    text-align: center;
+    font-family: var(--sans-serif);
+    padding: 1rem;
+}
+
+.content a {
+    color: var(--accent-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content h1 {
+    color: var(--accent-dark);
+    font-family: var(--serif);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.content p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.hero img {
+    min-width: 48rem;
+    max-width: 48rem;
+}
