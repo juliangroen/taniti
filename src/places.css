@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4.5rem 1rem 1rem 1rem;
+}
+
+.content h1 {
+    color: var(--accent-dark);
+    display: block;
+    margin-bottom: 1rem;
+}
