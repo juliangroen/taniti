@@ -1,0 +1,106 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4.5rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.content h1 {
+    color: var(--accent-dark);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.collapse-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--sans-serif);
+    font-size: 0.8rem;
+    min-height: 3.2rem;
+    width: 100%;
+}
+
+.collapse-wrapper .title {
+    margin-right: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.collapse-wrapper .toggle {
+    align-self: flex-end;
+    margin: 0;
+    opacity: 0;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.collapse-wrapper .chevron-icon {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    margin: 0.6rem 0 0 0;
+    padding: 0;
+    position: absolute;
+    width: 0.8rem;
+    z-index: 1;
+}
+
+.collapse-wrapper .chevron-icon div {
+    align-items: center;
+    background: var(--primary);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+    width: 100%;
+    position: absolute;
+}
+
+.collapse-wrapper .chevron-icon div:before,
+.collapse-wrapper .chevron-icon div:after {
+    content: '';
+    background: var(--primary);
+    border-radius: 4rem;
+    height: 2px;
+    transition: all 0.2s ease;
+    transform: rotate(45deg);
+    width: 100%;
+    position: absolute;
+    left: -0.4rem;
+}
+
+.collapse-wrapper .chevron-icon div:after {
+    transform: rotate(-45deg);
+    left: 0.2rem;
+}
+
+/* .collapse-wrapper .toggle:checked ~ .chevron-icon div {
+    transform: rotate(180deg);
+} */
+
+.collapse-wrapper .toggle:checked ~ .chevron-icon div:before {
+    transform: rotate(-45deg);
+}
+
+.collapse-wrapper .toggle:checked ~ .chevron-icon div:after {
+    transform: rotate(45deg);
+}
+
+.collapse-wrapper .toggle:checked ~ .title {
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+}
+
+.collapse-wrapper .toggle:checked ~ .body {
+    display: block;
+}
+
+.collapse-wrapper .body {
+    display: none;
+    margin-top: 1rem;
+}
