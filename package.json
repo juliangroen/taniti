@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "clean": "rm -rf build",
+        "clean": "rm -rf build/*",
         "build": "npm run clean && postcss src/*.css --use autoprefixer -d build/src && cp src/*.html build/src && cp *.html build && mkdir -p build/img && cp img/*.* build/img",
         "deploy": "push-dir --dir=build --branch=gh-pages"
     },
