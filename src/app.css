@@ -54,6 +54,21 @@ p {
     box-shadow: 0 8px 16px 0 var(--shadow);
 }
 
+.card img {
+    border: 1px solid var(--border);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card h1 {
+    color: var(--accent-light);
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+}
+
 .main-header {
     background: var(--bg);
     box-shadow: 0 -4px 16px 0 var(--shadow);

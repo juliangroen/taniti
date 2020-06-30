@@ -10,18 +10,3 @@
     display: block;
     margin-bottom: 1rem;
 }
-
-.card img {
-    border: 1px solid var(--border);
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.card h1 {
-    color: var(--accent-light);
-    font-size: 1.5rem;
-}
-
-.card p {
-    font-size: .8rem;
-}

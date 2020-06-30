@@ -19,16 +19,8 @@
     z-index: 2;
 }
 
-.menu-wrapper .menu-toggle:hover + .menu-icon div {
-    transform: rotate(8deg);
-}
-
 .menu-wrapper .menu-toggle:checked + .menu-icon div {
     transform: rotate(45deg);
-}
-
-.menu-wrapper .menu-toggle:checked:hover + .menu-icon div {
-    transform: rotate(37deg);
 }
 
 .menu-wrapper .menu-toggle:checked + .menu-icon div:before,
@@ -59,7 +51,8 @@
 .menu-wrapper .menu-icon div {
     position: absolute;
     background: var(--primary);
-    height: 2px;
+    border-radius: 4rem;
+    height: 3px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -72,8 +65,9 @@
     content: "";
     position: absolute;
     background: var(--primary);
+    border-radius: 4rem;
     top: -8px;
-    height: 2px;
+    height: 3px;
     width: 100%;
 }
 
@@ -106,7 +100,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     list-style: none;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
