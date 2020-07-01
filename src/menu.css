@@ -62,7 +62,7 @@
 
 .menu-wrapper .menu-icon div:before,
 .menu-wrapper .menu-icon div:after {
-    content: "";
+    content: '';
     position: absolute;
     background: var(--primary);
     border-radius: 4rem;
@@ -76,18 +76,18 @@
 }
 
 .menu-wrapper .menu-content {
-    position: absolute;
     background: var(--bg);
+    display: flex;
+    height: calc(100vh - 3.4rem);
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    visibility: hidden;
+    width: 100vw;
+    position: absolute;
     top: 3.4rem;
     left: 0;
-    height: calc(100vh - 3.4rem);
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.4s ease;
 }
 
 .menu-wrapper .menu-content ul {
@@ -126,25 +126,29 @@
 
 @media screen and (min-width: 768px) {
     .menu-wrapper .menu-content {
+        align-items: center;
         background: unset;
-        height: unset;
-        justify-content: unset;
+        height: 0;
+        justify-content: flex-end;
+        margin: auto;
+        max-width: 64rem;
         opacity: 1;
         visibility: visible;
-        width: unset;
         top: 0;
-        right: 1rem;
-        left: unset;
+        right: 0;
     }
 
     .menu-wrapper .menu-content ul {
-        padding: 0.5rem;
+        text-align: right;
+        margin: 1.8rem 0 0 0;
+        padding: 1rem;
         width: unset;
+        position: fixed;
     }
     .menu-wrapper .menu-content ul li {
         display: inline;
         font-size: 1rem;
-        letter-spacing: unset;
+        letter-spacing: 1px;
     }
 
     .menu-wrapper .menu-icon,

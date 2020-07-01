@@ -1,8 +1,8 @@
 :root {
     /* fonts */
-    --logo-font: "Krona One", sans-serif;
-    --sans-serif: "Montserrat", sans-serif;
-    --serif: "Playfair Display", serif;
+    --logo-font: 'Krona One', sans-serif;
+    --sans-serif: 'Montserrat', sans-serif;
+    --serif: 'Playfair Display', serif;
 
     /* color scheme */
     --text-light: hsla(248, 16%, 96%, 1);
@@ -71,19 +71,22 @@ p {
 }
 
 .main-header {
-    background: var(--bg);
-    box-shadow: 0 0px 8px 0 var(--shadow);
     position: fixed;
     text-align: center;
-    width: 100vw;
     z-index: 11;
 }
 
 .main-header div {
+    align-items: center;
+    background: var(--bg);
+    box-shadow: 0 0px 8px 0 var(--shadow);
     color: var(--primary);
+    display: flex;
     font-family: var(--logo-font);
     font-size: 1.5rem;
-    padding: 1rem;
+    height: 3.5rem;
+    justify-content: center;
+    width: 100vw;
 }
 
 .main-header a {
@@ -97,7 +100,12 @@ p {
 
 @media screen and (min-width: 768px) {
     .main-header {
-        text-align: left;
+        width: 100vw;
+    }
+    .main-header div {
+        justify-content: left;
         padding-left: 1rem;
+        margin: 0 auto;
+        max-width: 64rem;
     }
 }
