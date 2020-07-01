@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 11;
 }
 
 .menu-wrapper .menu-toggle {
@@ -16,7 +16,7 @@
     padding: 0;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 12;
 }
 
 .menu-wrapper .menu-toggle:checked + .menu-icon div {
@@ -45,7 +45,7 @@
     justify-content: center;
     margin: 1rem;
     padding: 0;
-    z-index: 1;
+    z-index: 11;
 }
 
 .menu-wrapper .menu-icon div {
@@ -62,7 +62,7 @@
 
 .menu-wrapper .menu-icon div:before,
 .menu-wrapper .menu-icon div:after {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--primary);
     border-radius: 4rem;
@@ -99,6 +99,7 @@
     font-family: var(--sans-serif);
     font-size: 1.5rem;
     font-weight: bold;
+    letter-spacing: 0.2rem;
     list-style: none;
     padding: 1rem;
     text-align: center;
@@ -106,7 +107,6 @@
 
 .menu-wrapper .menu-content a {
     color: var(--primary);
-    letter-spacing: 0.2rem;
     text-decoration: none;
 }
 
@@ -122,4 +122,36 @@
     bottom: 0;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-wrapper .menu-content {
+        background: unset;
+        height: unset;
+        justify-content: unset;
+        opacity: 1;
+        visibility: visible;
+        width: unset;
+        top: 0;
+        right: 1rem;
+        left: unset;
+    }
+
+    .menu-wrapper .menu-content ul {
+        padding: 0.5rem;
+        width: unset;
+    }
+    .menu-wrapper .menu-content ul li {
+        display: inline;
+        font-size: 1rem;
+        letter-spacing: unset;
+    }
+
+    .menu-wrapper .menu-icon,
+    .menu-wrapper .menu-toggle,
+    .menu-wrapper .menu-content li:first-child,
+    .menu-wrapper .menu-content li:last-child,
+    .menu-wrapper .menu-content li:nth-last-child(2) {
+        display: none;
+    }
 }
