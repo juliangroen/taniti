@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        box-shadow: 0 0 8px 1px var(--shadow);
+        box-shadow: 0 0 16px -4px var(--shadow);
         height: 100vh;
         margin: 0 auto;
         max-width: 64rem;
