@@ -108,4 +108,10 @@ p {
         margin: 0 auto;
         max-width: 64rem;
     }
+
+    .card {
+        margin: 0 1rem 1rem 1rem;
+        max-width: calc((64rem / 2) - 3rem);
+        width: 45%;
+    }
 }
