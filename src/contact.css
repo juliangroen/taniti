@@ -67,6 +67,8 @@
 
     .content {
         box-shadow: 0 0 16px -4px var(--shadow);
+        display: flex;
+        flex-direction: column;
         height: 100%;
         margin: auto;
         max-width: 64rem;

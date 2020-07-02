@@ -1,8 +1,8 @@
 :root {
     /* fonts */
-    --logo-font: 'Krona One', sans-serif;
-    --sans-serif: 'Montserrat', sans-serif;
-    --serif: 'Playfair Display', serif;
+    --logo-font: "Krona One", sans-serif;
+    --sans-serif: "Montserrat", sans-serif;
+    --serif: "Playfair Display", serif;
 
     /* color scheme */
     --text-light: hsla(248, 16%, 96%, 1);
@@ -98,6 +98,10 @@ p {
     color: var(--primary);
 }
 
+footer {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .main-header {
         width: 100vw;
@@ -113,5 +117,42 @@ p {
         margin: 0 1rem 1rem 1rem;
         max-width: calc((64rem / 2) - 3rem);
         width: 45%;
+    }
+
+    footer {
+        background: var(--accent-dark);
+        border-top: 4px solid var(--accent-light);
+        display: block;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    footer div {
+        display: flex;
+        padding: 1rem;
+    }
+
+    footer div ul {
+        color: var(--text-light);
+        font-family: var(--sans-serif);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        list-style: none;
+        line-height: 1.5rem;
+        margin: 0;
+        max-width: calc((64rem / 3));
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer div .third-col a {
+        color: var(--text-light);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    footer div .third-col a:hover {
+        color: var(--accent-light);
     }
 }
